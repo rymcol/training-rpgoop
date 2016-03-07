@@ -12,6 +12,7 @@
 		9493DB2A1C8DE33A0004EA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9493DB281C8DE33A0004EA5A /* Main.storyboard */; };
 		9493DB2C1C8DE33A0004EA5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9493DB2B1C8DE33A0004EA5A /* Assets.xcassets */; };
 		9493DB2F1C8DE33A0004EA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9493DB2D1C8DE33A0004EA5A /* LaunchScreen.storyboard */; };
+		9493DB371C8DF37C0004EA5A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9493DB361C8DF37C0004EA5A /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9493DB2B1C8DE33A0004EA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9493DB2E1C8DE33A0004EA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9493DB301C8DE33A0004EA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9493DB361C8DF37C0004EA5A /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9493DB2B1C8DE33A0004EA5A /* Assets.xcassets */,
 				9493DB2D1C8DE33A0004EA5A /* LaunchScreen.storyboard */,
 				9493DB301C8DE33A0004EA5A /* Info.plist */,
+				9493DB361C8DF37C0004EA5A /* Character.swift */,
 			);
 			path = "training-rpgoop";
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					9493DB201C8DE33A0004EA5A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8VF4S3W85G;
 					};
 				};
 			};
@@ -135,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9493DB371C8DF37C0004EA5A /* Character.swift in Sources */,
 				9493DB271C8DE33A0004EA5A /* ViewController.swift in Sources */,
 				9493DB251C8DE33A0004EA5A /* AppDelegate.swift in Sources */,
 			);
@@ -251,7 +256,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "training-rpgoop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanmcollins.training-rpgoop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,7 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "training-rpgoop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanmcollins.training-rpgoop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
