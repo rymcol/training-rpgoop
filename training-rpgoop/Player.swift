@@ -9,6 +9,7 @@
 import Foundation
 
 class Player: Character {
+    
     private var _name = "Player"
     private var _inventory = [String]()
     

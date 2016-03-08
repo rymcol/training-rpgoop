@@ -9,6 +9,7 @@
 import Foundation
 
 class  Character {
+    
     private var _hp: Int
     private var _attackPower: Int
     
