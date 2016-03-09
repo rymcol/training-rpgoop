@@ -88,6 +88,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ce-Mo-N4d">
+                                <rect key="frame" x="494" y="483" width="97" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="IOX-a4-cEg"/>
+                                    <constraint firstAttribute="height" constant="109" id="lcf-8F-mXs"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFG-Ls-hmm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -102,6 +113,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="7JH-L3-kmR" secondAttribute="trailing" constant="126" id="Rge-fc-09V"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lZ7-UG-YFq" secondAttribute="bottom" constant="64" id="ShA-PL-Z5u"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g3b-Nn-fgy" secondAttribute="bottom" id="Tgy-HI-hDm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6ce-Mo-N4d" secondAttribute="trailing" constant="-11" id="UId-TS-ilX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ce-Mo-N4d" secondAttribute="bottom" constant="8" id="WCA-jc-PCv"/>
                             <constraint firstItem="g3b-Nn-fgy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b0N-z4-9iG"/>
                             <constraint firstAttribute="trailing" secondItem="537-hn-8AJ" secondAttribute="trailing" constant="20" id="cku-6c-SoD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D12-Zg-yEE" secondAttribute="bottom" id="fVw-F8-MkD"/>
@@ -119,25 +132,16 @@
                         <outlet property="enemyHPLabel" destination="7JH-L3-kmR" id="GyU-6d-Q0o"/>
                         <outlet property="enemyImage" destination="537-hn-8AJ" id="PXV-2x-8PZ"/>
                         <outlet property="playerHPLabel" destination="9Dq-Kc-46U" id="h73-U0-ECe"/>
-                        <outlet property="printLabel" destination="26C-Y1-Dfh" id="lDG-yP-kzg"/>
+                        <outlet property="printLabel" destination="0gB-cZ-L07" id="rEs-EZ-mj0"/>
                     </connections>
                 </viewController>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imn-Bz-YnL">
-                    <rect key="frame" x="0.0" y="0.0" width="84" height="34"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="34" id="fpF-xs-kc8"/>
-                        <constraint firstAttribute="width" constant="84" id="xQj-Jg-Ksr"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="299"/>
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
