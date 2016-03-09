@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var printLabel: UIImageView!
+    @IBOutlet weak var playerHPLabel: UILabel!
+    @IBOutlet weak var enemyHPLabel: UILabel!
+    @IBOutlet weak var enemyImage: UIImageView!
+    @IBOutlet weak var chestButton: UIButton!
+    
+    
+    @IBAction func onChestTapped(sender: UIButton) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
