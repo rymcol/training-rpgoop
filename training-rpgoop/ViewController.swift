@@ -62,9 +62,15 @@ class ViewController: UIViewController {
         
         if rand == 0 {
             enemy = Kimara(startingHp: 50, attackPower: 12)
+            enemyImage.image = UIImage(named: "enem1")
+            enemyImage.hidden = false
         } else {
             enemy = DevilWizard(startingHp: 60, attackPower: 15)
+            enemyImage.image = UIImage(named: "enem2")
+            enemyImage.hidden = false
         }
+        
+        printLabel.text = "A wild \(enemy.type) appeared!"
         
     }
 
